@@ -48,7 +48,8 @@ gulp.task('html', () => {
 gulp.task('img', () => {
     gulp.src('src/img/**/*')
         .pipe(minifyImg())
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('dist/img'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('delete', () => del(['dist/css', 'dist/js', 'dist/img', 'dist/**/*.html']));

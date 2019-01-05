@@ -1,2 +1,22 @@
 // reset
 @import "reset";
+
+header .top{
+    line-height: 30px;
+    height:30px;
+    background-color:#2c3942;
+}
+header .top main{
+    float:right;
+    margin-right:10px;
+    color:#fff;
+}
+header .top main a{
+    text-decoration: none;
+    color:#fff;
+}
+header .mid{
+    height: 100px;
+    background-color: #406884; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #406884, #38464f); /* Standard syntax (must be last) */
+}
